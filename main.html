@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gavin's Website</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+    body{
+      background-color: #CACACA;
+      margin: 0px;
+    }
+
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .leftSide {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+      animation-name: slideRight;
+      animation-duration: 3s;  
+    }
+
+    @keyframes slideRight {
+      from{transform: translateX(-400%)}
+    } 
+    
+    @keyframes slideLeft{
+      from{transform: translateX(400%)}
+    }  
+    
+    @keyframes slideUp {
+      from{transform: translateY(700%)}
+    }
+
+    @keyframes slideUpP1 {
+      from{transform: translateY(700%)}
+    }
+
+    .hiTextSpan,
+    .hiText,
+    .p2,
+    .p3,
+    .p4,
+    .email,
+    .socialMediaContainer{
+      animation-name: slideUp;
+      animation-duration: 4s;
+    }
+
+    .p1{
+      animation-name: slideUpP1;
+      animation-duration: 4s;
+    }
+
+    .leftSide li a{
+      text-decoration: none;
+      color: black;
+      font-family: 'Roboto', sans-serif;
+      transition: text-decoration 1s ease;
+    }
+
+    .leftSide li a:hover {
+      text-decoration: underline;
+    }
+
+    .darkModeIcon  {
+      animation-name: slideLeft;
+      animation-duration: 3s;
+    }
+
+    .darkModeIcon img {
+      padding-right: 30px;
+      width: 20px;
+      cursor: pointer;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      /* background-color: red; */
+    }
+
+    /* .mainTittle,
+    .paragraphOne,
+    .paragraphTwo {  
+      width: 840px;
+      background-color: blue;
+    } */
+
+    /* .paragraphThree{
+      width: 900px;
+    } */
+
+    .hiText {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      font-weight: bold;
+      font-size: 50px;
+    }
+
+    .hiTextSpan {
+      color: #5B5A5A;
+      font-size: 10px;
+    }
+
+    p {
+      font-family: 'Roboto', sans-serif;
+    }
+
+    p a {
+      text-decoration: none;
+      color: red;
+    }
+
+    p a:hover {
+      text-decoration: underline;
+      color: red;
+    }
+
+    .socialMediaContainer {
+      display: flex;
+      gap: 10px;
+    }
+
+    .socialMediaContainer img {
+      width: 15px;
+    }
+
+    .socialMediaContainer img:hover {
+      cursor: pointer;
+    }
+  </style>
+  <!-- <link rel="stylesheet" href="style.css"> -->
+</head>
+<body>
+  <header>
+    <ul class="leftSide">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Project</a></li>
+    </ul>
+    <div class="darkModeIcon">
+      <img src="moon.png" alt="Dark Mode Icon">
+    </div>
+  </header>
+
+  <main>
+    <div>
+        <h1 class="hiText"><span class="hiTextSpan"> Dear Future Employer,</span><br>Hi, I’m Gavin 👋</h1>
+        <p class="p1">🎮 I’m A Game and Web Developer. I am proficient across multiple languages.</p>
+        <p class="p2">👨‍💻 I began programming at the age of 16, as I was drawn into this field by my profound love for technology and design. <br>A pivotal moment arrived when my parents gave me a gaming laptop as a birthday gift, which ignited my curiosity to <br>channel its formidable power. It was this very curiosity that led me to the realm of programming. 🔥</p>
+        <p class="p3">🌍 My dream now is to move to the United States, where I believe it's the place where I could truly make a difference and <br>create impactful things with the abilities i have and execute all the ideas i have.</p>
+        <p class="p4">🚀 It's been three years since I first console.log("hello world") 👋, and now I'm moving on to develop a more complex project. 🛠️ <br>Coding has imparted impactful lessons, teaching me about patience and persistence. ⏳ <br>There's no doubt about it – it's the greatest investment I've ever made. 📈</p>
+      <p class="email">📩 Email me <a href="">&lt;gavingunardi@gmail.com&gt;</a> </p>
+      <div class="socialMediaContainer">
+        <img src="twitter.png">
+        <img src="linkendin.png">
+        <img src="social.png"
+      </div>
+    </div>  
+  </main>
+</body>
+</html>
+
